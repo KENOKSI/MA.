@@ -1,0 +1,25 @@
+.bth{
+    display: flex;
+font-size: 16px;
+    border: none;
+    background: #2563EB;
+    color: rgb(255, 255, 255);
+    padding: 12px 36px 12px 12px;
+    border-radius: 8px;
+    align-items: center;
+    font-family: 'Roboto-med';
+    transition: transform 0.4s ease;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+}
+
+.bth img {
+    position: relative;
+    left: 15px;
+    font-family: 'Roboto-med';
+
+}
