@@ -1,151 +1,33 @@
-.header__inner {
+.header {
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.header__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #94A3B8;
-    padding-bottom: 25px;
+}
 
+.header__logo {
+    width: 48px;
+    height: 48px;
 }
 
 .header__list {
     display: flex;
-    gap: 27px;
+    gap: 40px;
 }
-
-
-
-
-.header__link a {
-    font-family: 'Roboto';
-    font-weight: medium;
-
-
-}
-
-.border__header {}
 
 .header__link {
-    transition: color .2s linear;
+    font-size: 16px;
+    font-weight: 500;
+    color: #1F2937;
+    transition: color 0.2s ease;
 }
 
 .header__link:hover {
-    &:hover {
-        color: #2563EB;
-    }
-}
-
-
-
-.menu__icon {
-    display: none;
-}
-
-
-
-@media (max-width: 768px) {
-    .header__inner {
-        position: relative;
-    }
-
-    .bth {
-        display: none;
-    }
-
-    .header__link {
-        display: block;
-        font-size: 30px;
-        line-height: 70px;
-    }
-
-    .header__list {
-
-        flex-direction: column;
-        gap: 0;
-        margin: auto;
-    }
-
-
-    .header__body {
-        position: absolute;
-        top: 0;
-        height: 100vh;
-        width: 100%;
-        display: flex;
-        right: -110%;
-        transition: all 0.2s ease;
-        background-color: #2563EB;
-        border-radius: 10px;
-        z-index: 2;
-
-        .header__link:hover {
-            &:hover {
-                color: #ffffff;
-            }
-        }
-
-        &.active {
-
-            right: 0;
-
-        }
-    }
-}
-
-@media (max-width: 769px) {
-    .menu__icon {
-        display: block;
-        width: 30px;
-        height: 18px;
-        position: relative;
-        z-index: 5;
-        cursor: pointer;
-
-    }
-
-    .menu__icon span {
-        position: absolute;
-        top: calc(50% - 1px);
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background-color: #000000;
-        transition: all 0.3s ease;
-
-
-
-
-
-
-        &:first-child {
-            top: 0;
-
-        }
-
-        &:last-child {
-            top: auto;
-            bottom: 0;
-
-        }
-
-
-    }
-
-    .active {
-        span {
-            transform: scale(0);
-
-            &:first-child {
-
-                transform: rotate(-45deg);
-                top: calc(50% - 1px);
-
-            }
-
-            &:last-child {
-                transform: rotate(45deg);
-                bottom: calc(50% - 1px);
-            }
-        }
-
-    }
+    color: #2563EB;
 }
