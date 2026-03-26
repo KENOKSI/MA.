@@ -1,28 +1,9 @@
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: false,
+const body = document.querySelector('.body')
+const acrtionBth = document.querySelector('.action__bth')
+const modal = document.querySelector('.modal')
+const aaa = document.querySelector('.modal__hidden')
 
-  // If we need pagination
-  pagination: {
-  
-  },
-
-  // Navigation arrows
-  
-
-  // And if we need scrollbar
-  scrollbar: {
-    hide:false,
-  },
-});
-const prevBtn = document.querySelector('.custom-prev');
-const nextBtn = document.querySelector('.custom-next');
-
-prevBtn.addEventListener('click', () => {
-    swiper.slidePrev();  
-});
-
-nextBtn.addEventListener('click', () => {
-    swiper.slideNext();  
-});
+acrtionBth.addEventListener('click', function(){
+    body.classList.add('body__active')
+    aaa.classList.add('modal__hidden')
+})
